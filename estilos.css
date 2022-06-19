@@ -1,0 +1,460 @@
+:root{
+    --color1: black;
+    --color2: white;
+    --color3: red;
+    --color4: blue;
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    box-shadow: 0px 2px 10px 5px gray;
+}
+
+.contenedor{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--color2);
+
+    margin: 60px auto;
+
+    display: grid;
+    grid-template-columns: repeat(8,1fr); /*Se forman columnnas tipo responsive*/
+    grid-template-rows: repeat(6,1fr);
+    gap: 2px;
+}
+
+
+.item{
+    color: var(--color2);
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    animation: todos 3s ease;
+}
+
+@keyframes todos {
+    0%{
+        transform: scale(0.2);
+    }
+
+    50%{
+        transform: scale(1.0);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.item1{
+    background-color: gray;
+}
+
+.item1:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item2{
+    grid-column: 2/8;
+    color: var(--color1);
+    justify-content: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.item3{
+    background-color: var(--color4);
+}
+
+.item3:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item4{
+    background-color: rgba(206, 206, 14, 0.913);
+}
+
+.item4:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item5{
+    background-color: rgb(206, 17, 17);
+}
+
+.item5:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item6{
+    grid-column: 3/6;
+    grid-row: 2/4;
+    background-color: var(--color2);
+    color: var(--color1);
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    animation: c 1s 1 ease;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes c {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*----Hover para el cuadro----*/
+.item6:hover{
+    background-color: var(--color1);
+    transform: scale(1.1);
+    transition: all 1s;
+    font-size: 21px;
+    border-radius: 28px;
+}
+/*------------------------------*/
+
+/* --------Cuadro con colores------*/
+.item6 .nometales{
+    color: gray;
+}
+
+.item6 .alcalinot{
+    color: rgb(206, 17, 17);
+}
+
+.item6 .Metalesalc{
+    color: rgba(206, 206, 14, 0.913);
+}
+
+.item6 .Metalesdet{
+    color: purple;
+}
+
+.item6 .Metaloides{
+    color: rgba(15, 117, 15, 0.906);
+}
+
+.item6 .Halógenos{
+    color: rgba(14, 105, 252, 0.83);
+}
+
+.item6 .Gases-nobles{
+    color: var(--color4);
+}
+
+/*----------------------*/
+
+.item7{
+    background-color: gray;
+}
+
+.item7:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item8{
+    background-color: rgba(14, 105, 252, 0.83);
+}
+
+.item8:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item9{
+    background-color: var(--color4);
+}
+
+.item9:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item10{
+    background-color: rgba(206, 206, 14, 0.913);
+}
+
+.item10:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item11{
+    background-color: rgb(206, 17, 17);
+}
+
+.item11:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item12{
+    background-color: var(--color1);
+}
+
+.item12:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item13{
+    background-color: gray;
+}
+
+.item13:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item14{
+    background-color: rgba(14, 105, 252, 0.83);
+}
+
+.item14:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item15{
+    background-color: var(--color4);
+}
+
+.item15:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item16{
+    background-color: rgba(206, 206, 14, 0.913);
+}
+
+.item16:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item17{
+    background-color: rgb(206, 17, 17);
+}
+
+.item17:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item18{
+    background-color: purple;
+}
+
+.item18:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item19{
+    background-color: purple;
+}
+
+.item19:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item20{
+    background-color: purple;
+}
+
+.item20:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item21{
+    background-color: gray;
+}
+
+.item21:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item22{
+    background-color: rgba(14, 105, 252, 0.83);
+}
+
+.item22:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item23{
+    background-color: var(--color4);
+}
+
+.item23:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item24{
+    background-color: rgba(206, 206, 14, 0.913);
+}
+
+.item24:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item25{
+    background-color: rgb(206, 17, 17);
+}
+
+.item25:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item26{
+    background-color: purple;
+}
+
+.item26:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item27{
+    background-color: purple;
+}
+
+.item27:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item28{
+    background-color: purple;
+}
+
+.item28:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item29{
+    background-color: rgba(15, 117, 15, 0.906);
+}
+
+.item29:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item30{
+    background-color: rgba(14, 105, 252, 0.83);
+}
+
+.item30:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item31{
+    background-color: var(--color4);
+}
+
+.item31:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item32{
+    background-color: rgba(206, 206, 14, 0.913);
+}
+
+.item32:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item33{
+    background-color: rgb(206, 17, 17);
+}
+
+.item33:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item34{
+    background-color: purple;
+}
+
+.item34:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item35{
+    background-color: purple;
+}
+
+.item35:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item36{
+    background-color: purple;
+}
+
+.item36:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item37{
+    background-color:  rgba(15, 117, 15, 0.906);
+}
+
+.item37:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item38{
+    background-color: rgba(14, 105, 252, 0.83);
+}
+
+.item38:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
+
+.item39{
+    background-color: var(--color4);
+}
+
+.item39:hover{
+    transition: all 2s;
+    transform: scale(1.1);
+}
